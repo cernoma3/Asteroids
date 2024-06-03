@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://1av0rgilw17r"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_0nlrc"]
+[ext_resource type="FontFile" uid="uid://cgn0d3e1csa5m" path="res://assets/font/The Kanzie TTF Demo.ttf" id="2_v078i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_eaafr"]
+font = ExtResource("2_v078i")
+font_size = 30
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0nlrc")
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 1.0
+offset_right = 245.0
+offset_bottom = 47.0
+text = "SCORE: 9999"
+label_settings = SubResource("LabelSettings_eaafr")
+
+[node name="Lives" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 54.0
+offset_right = 57.0
+offset_bottom = 94.0

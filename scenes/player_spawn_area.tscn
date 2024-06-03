@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjk0shbxmca28"]
+
+[ext_resource type="Script" path="res://scripts/player_spawn_area.gd" id="1_gp2xs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_82po1"]
+radius = 69.0652
+
+[node name="PlayerSpawnArea" type="Area2D"]
+collision_layer = 16
+collision_mask = 4
+script = ExtResource("1_gp2xs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_82po1")
